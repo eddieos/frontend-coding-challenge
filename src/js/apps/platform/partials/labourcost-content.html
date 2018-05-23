@@ -1,13 +1,129 @@
+<!--<div ng-controller="ctrlLabourCost">-->
+    <!--<h2>Labour cost report</h2>-->
+
+    <!--<div class="list-table">-->
+        <!--<div class="header-row">-->
+            <!--<div class="col-25">Example heading</div>-->
+        <!--</div>-->
+
+        <!--<div class="body-row">-->
+            <!--<div class="col-25">-->
+                <!--&lt;!&ndash;{{items | json}}&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
 <div ng-controller="ctrlLabourCost">
-	<h2>Labour cost report</h2>
-	
-	<div class="list-table">
-		<div class="header-row">
-			<div class="col-25">Example heading</div>
-		</div>
-		
-		<div class="body-row">
-			<div class="col-25">Example data entry</div>
-		</div>
-	</div>
+    <h2>Labour cost report</h2>
+
+    <div class="divTable">
+        <div class="tableBody">
+            <!--Table Header-->
+            <div class="tableRow tableHead">
+                <div>Payroll<br>Provider</div>
+                <div>Worker</div>
+                <div>Compliance<br>Score</div>
+                <div class="align-right">Gross<br>Pay (&#8356;)</div>
+                <div class="align-right">Payroll<br>Admin (&#8356;)</div>
+                <div class="align-right">Labour<br>Cost</div>
+                <div>Work<br>Force</div>
+            </div>
+
+            <!--Table Body -->
+            <div class="tableRow">
+                <div class="fw-400">Senior Payroll Limited</div>
+                <div class="fs-28 fw-300">813</div>
+                <div class="fs-15 fw-400 divider-right">83%</div>
+                <div class="align-right fs-28 dark-text">1,117,494</div>
+                <div class="align-right">-</div>
+                <div class="align-right light-text fs-28 divider-right">1,117,494</div>
+                <div class="fs-15 fw-400">93.8%</div>
+            </div>
+
+            <div class="list-divider-div">list-divider-div</div>
+
+            <div class="tableRow">
+                <div class="fw-400">Canal Service Limited</div>
+                <div class="fs-28 fw-300">1</div>
+                <div class="fs-15 fw-400 divider-right">0%</div>
+                <div class="align-right fs-28 dark-text">605</div>
+                <div class="align-right">-</div>
+                <div class="align-right light-text fs-28 divider-right">605</div>
+                <div class="fs-15 fw-400">0.1%</div>
+            </div>
+
+            <div class="tableRow">
+                <div class="fw-400">Senior Payroll Limited</div>
+                <div class="fs-28 fw-300">813</div>
+                <div class="fs-15 fw-400 divider-right">83%</div>
+                <div class="align-right fs-28 dark-text">1,117,494</div>
+                <div class="align-right">-</div>
+                <div class="align-right light-text fs-28 divider-right">1,117,494</div>
+                <div class="fs-15 fw-400">93.8%</div>
+            </div>
+            <div class="tableRow">
+                <div class="fw-400">Canal Service Limited</div>
+                <div class="fs-28 fw-300">1</div>
+                <div class="fs-15 fw-400 divider-right">0%</div>
+                <div class="align-right fs-28 dark-text">605</div>
+                <div class="align-right">-</div>
+                <div class="align-right light-text fs-28 divider-right">605</div>
+                <div class="fs-15 fw-400">0.1%</div>
+            </div>
+
+            <div class="tableRow">
+                <div class="fw-400">Senior Payroll Limited</div>
+                <div class="fs-28 fw-300">813</div>
+                <div class="fs-15 fw-400 divider-right">83%</div>
+                <div class="align-right fs-28 dark-text">1,117,494</div>
+                <div class="align-right">-</div>
+                <div class="align-right light-text fs-28 divider-right">1,117,494</div>
+                <div class="fs-15 fw-400">93.8%</div>
+            </div>
+
+            <div class="tableRow">
+                <div class="fw-400">Canal Service Limited</div>
+                <div class="fs-28 fw-300">1</div>
+                <div class="fs-15 fw-400 divider-right">0%</div>
+                <div class="align-right fs-28 dark-text">605</div>
+                <div class="align-right">-</div>
+                <div class="align-right light-text fs-28 divider-right">605</div>
+                <div class="fs-15 fw-400">0.1%</div>
+            </div>
+
+            <div class="tableRow">
+                <div class="fw-400">Senior Payroll Limited</div>
+                <div class="fs-28 fw-300">813</div>
+                <div class="fs-15 fw-400 divider-right">83%</div>
+                <div class="align-right fs-28 dark-text">1,117,494</div>
+                <div class="align-right">-</div>
+                <div class="align-right light-text fs-28 divider-right">1,117,494</div>
+                <div class="fs-15 fw-400">93.8%</div>
+            </div>
+
+            <div class="tableRow">
+                <div class="fw-400">Canal Service Limited</div>
+                <div class="fs-28 fw-300">1</div>
+                <div class="fs-15 fw-400 divider-right">0%</div>
+                <div class="align-right fs-28 dark-text">605</div>
+                <div class="align-right">-</div>
+                <div class="align-right light-text fs-28 divider-right">605</div>
+                <div class="fs-15 fw-400">0.1%</div>
+            </div>
+            <div class="list-divider-div">list-divider-div</div>
+            <!--Table Footer-->
+            <div class="tableRow divTableFoot">
+                <div class="align-center">TOTAL</div>
+                <div class="fs-28">867</div>
+                <div class="fs-15 fw-400 divider-right">83%</div>
+                <div class="align-right fs-28">1,290,475</div>
+                <div class="align-right">-</div>
+                <div class="align-right fs-28 divider-right">1,290,475</div>
+                <div class="fs-15 fw-500">100.0%</div>
+            </div>
+        </div>
+    </div>
+
 </div>

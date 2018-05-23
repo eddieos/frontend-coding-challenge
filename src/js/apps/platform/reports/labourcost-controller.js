@@ -14,11 +14,14 @@ app.controller("ctrlLabourCost", ["$rootScope", "$scope", "$timeout", "restalche
 		forward: "reports",
 		selected: "labourreport"
 	});
-	
+
 	// Initialise the REST api
 	var rest = $restalchemy.init({ root: $rootScope.config.api.labourstats.root });
 	rest.api = $rootScope.config.api.labourstats;
-	
-	rest.at(rest.api.costs).get().then(function(costdata) {
-	});
+    // $scope.items = [];
+    rest.at(rest.api.costs).get().then(function(costdata) {
+        $scope.items = costdata;
+        console.log(costdata);
+    });
+
 }]);
