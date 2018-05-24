@@ -18,10 +18,12 @@ app.controller("ctrlLabourCost", ["$rootScope", "$scope", "$timeout", "restalche
 	// Initialise the REST api
 	var rest = $restalchemy.init({ root: $rootScope.config.api.labourstats.root });
 	rest.api = $rootScope.config.api.labourstats;
-    // $scope.items = [];
+    $scope.items = [];
     rest.at(rest.api.costs).get().then(function(costdata) {
-        $scope.items = costdata;
+        $scope.items = costdata[0].providers;
         console.log(costdata);
     });
+
+
 
 }]);
